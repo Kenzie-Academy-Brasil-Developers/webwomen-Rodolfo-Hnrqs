@@ -1,0 +1,348 @@
+header{
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0,0.7);
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(/src/assets/img/PhotoBG.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    height: 48rem;
+    width: 100%;
+
+}
+
+header > img{
+    padding-top: 6.25rem;
+    margin-bottom: 3.75rem;
+}
+
+.titleContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding-bottom: 7.5rem;
+    width: 100%;
+}
+
+.titleContent > div > h1{
+    font-size: var(--title-3);
+    line-height: 150%;
+    color: var(--color-grey-3);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.titleContent > div > span {
+    font-size: var(--text-1);
+    line-height: 120%;
+    color: var(--color-grey-5);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.titleContent > div > p {
+    font-size: var(--title-5);
+    line-height: 120%;
+    color: var(--color-grey-5);
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.titleContent > button{
+    background-color: var(--color-brand-1);
+    color: var(--color-grey-6);
+    text-align: center;
+    border-radius: var(--radius-default);
+    border: none;
+    padding: 12px 50px;
+    width: 18.5rem;
+    height: 3rem;
+    font-weight: 500;
+    font-size: var(--text-2);
+    margin-top: 3.75rem;
+}
+
+main{
+    height: auto;
+    width: 100%;
+    background-color: var(--color-grey-5);
+
+}
+
+.jobOffers > h1 {
+    color: var(--color-grey-1);
+    font-size: var(--title-4);
+    font-weight: 600;
+    margin-bottom: 2.75rem;
+}
+
+.jobOffers{
+    padding: 2.875rem 1rem;
+}
+
+.jobCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--color-grey-6);
+    border-radius: var(--radius-default);
+
+    padding: 2.375rem;
+    gap: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.jobCard > h2{
+    color: var(--color-grey-1);
+    font-size: var(--title-4);
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.localInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.localInfo > span{
+    color: var(--color-grey-2);
+    font-size: var(--text-3);
+    font-weight: 400;
+}
+
+.jobCard > p{
+    color: var(--color-grey-2);
+    font-size: var(--text-2);
+    font-weight: 400;
+}
+
+.cardFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tagInfo{
+    border: none;
+    border-radius: var(--radius-default);
+    background-color: var(--color-grey-3);
+    color:var(--color-grey-2);
+    font-size: var(--text-3);
+    font-weight: 400;
+
+    padding: 0.25rem 0.75rem;
+    height: 1.875rem;
+    width: fit-content;
+    justify-self: flex-start;
+}
+
+.candidateBtn{
+    border: none;
+    border-radius: var(--radius-default);
+    background-color: var(--color-brand-1);
+    color: var(--color-grey-6);
+    font-size: var(--text-2);
+    font-weight: 500;
+
+    width: 16.75rem;
+    height: 2.375rem;
+    align-self: flex-start;
+}
+
+.candidateBtn:hover{
+    background-color: var(--color-brand-2);
+}
+
+.jobSelected{
+    padding: 0rem 1rem;
+    padding-bottom: 2.7rem;
+}
+
+.selectedJobContainer{
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-default);
+    background-color: var(--color-grey-6);
+}
+
+.selectedJobContainer > h2{
+    font-size: var(--title-4);
+    font-weight: 600;
+    color: var(--color-grey-1);
+
+    padding: 2rem 2rem;
+}
+
+.selectedJobContainer > div > div > p{
+    font-size: var(--text-2);
+    font-weight: 400;
+    color: var(--color-grey-2);
+    line-height: 2rem;
+
+    padding: 2rem 2rem;
+}
+
+.emptySockets{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    padding: 0rem 2rem;
+    padding-bottom: 3.625rem;
+}
+.emptySockets > div{
+    height: 1rem;
+    border-radius: 2rem;
+    background-color: var(--color-grey-5);
+}
+.socket1{
+    width: 50%;
+}
+
+.socket2{
+    width: 100%;
+}
+
+.socket3, .socket4{
+    width: 35%;
+}
+
+.socket5{
+    width: 17%;
+}
+
+/* .selectedJobList{
+    width: fit-content;
+    height: fit-content;
+} */
+
+.selectedJobCard{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem 1.75rem ;
+    gap: 1.25rem;
+    border-bottom: 2px solid var(--color-grey-5);
+}
+
+.selectedJobCard:hover{
+    background-color: var(--color-grey-4);
+}
+
+.selectedJobCard > h2{
+    font-size: var(--title-5);
+    font-weight: 600;
+    color: var(--color-grey-1);
+    width: 80%;
+}
+
+.removeJobBtn{
+    width: 2.75rem;
+    height: 2.375rem;
+    border-radius: var(--radius-default);
+    border: none;
+
+    position: absolute;
+    right: 1rem;
+}
+
+.removeJobBtn:hover{
+    background-color: var(--color-grey-3);
+}
+
+
+@media(max-width: 320px){
+    .titleContent > button{
+        width: 90%;
+    }
+
+    header{
+        height: auto;
+    }
+}
+
+@media(min-width: 900px){
+    header{
+        padding-left: 6.25rem;
+        padding-right: 6.25rem;
+    }
+
+    .selectedJobContainer{
+        position: sticky;
+        top: 0rem;
+    }
+
+    .titleContent{
+        padding-bottom: 10rem;
+    }
+
+    .titleContent> div{
+        width: 80%;
+    }
+
+    .cardFooter{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .jobOffers{
+        width: 60%;
+        padding-top: 3.5rem;
+        padding-left: 6.25rem;
+    }
+
+    .jobSelected{
+        width: 35%;
+        padding-right: 6.25rem;
+        padding-top: 8.25rem;
+    }
+
+    .selectedJobContainer > p{
+        padding-top: 0;
+    }
+
+    .emptySockets{
+        padding-bottom: 2.125rem;
+    }
+
+    .selectedJobCard > h2{
+        width: 75%;
+    }
+
+    .removeJobBtn{
+        right: 1.875rem;
+    }
+}
+
+@media(min-width: 10px){
+    .candidateBtn{
+        width: 90%;
+    }
+}
+
+@media(min-width: 350px){
+    .candidateBtn{
+        width: 16.75rem;
+    }
+}
